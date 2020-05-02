@@ -1,9 +1,10 @@
-body, p, ul, li, a {
+body, p, ul, li, a, h1 {
     font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     margin:0; 
     padding: 0; 
     text-decoration: none;
     color: #292525;
+    list-style-type: none;
 }
 img {width: 100%; height: auto; max-width: 720px;}
 
@@ -20,10 +21,15 @@ img {width: 100%; height: auto; max-width: 720px;}
 .start-img-end {width: 100%; display: flex; justify-content: center;}
 
 .location {background-image: url("../img/bg-2.png"); background-size: contain; margin: 0 auto; display: flex; flex-direction: column; align-items: center; justify-content: space-between;}
-.location header {width:100%; display: flex; justify-content: space-between; flex-direction: row-reverse; align-items: center;}
+.location header {width:100%; display: flex; justify-content: space-between; flex-direction: row-reverse; align-items: center; margin-top: 10px;}
 .location span {display: block; margin-left: 20px; width: 55px; height:40px; border-radius: 15%; background-color: #CCC;  display: flex; justify-content: center; align-items: center;}
-.location span a {width: 30px; height: 30px; border-radius: 50%; background-color: #FFF; text-align: center; align-items: center; display: flex; justify-content: center;}
+.location span a {width: 30px; height: 30px; border-radius: 50%; text-align: center; align-items: center; display: flex; justify-content: center;}
+.location span:hover{background-color: #FFF; cursor: pointer;}
 .location header h1 {margin-right: 20px;}
 .location-logo {width: 100%; display: flex; justify-content: center; align-items: center;}
-.location-list ul {width: 100%; display: flex; flex-direction: column; align-items: center; text-align: right;}
+.location-list {width: 100%; display: flex; flex-direction: column; align-items: center; text-align: center; flex-grow: 1; justify-content: center;}
+.location-list h1 {width:70%; font-size: 1.8rem; font-weight: 600; padding: 1rem; background-color: #931119; color: #FFF; border-top-left-radius: 20px; border-top-right-radius: 20px;}
+.location-list ul {font-size: 1.5rem; text-align: left; background-color: #FFF; padding: 1rem;}
+.location-list ul li { margin: 5px 0; padding: 1rem;}
+.location-list ul li:hover{background-color: #E2E2E2; cursor: pointer;}
 
